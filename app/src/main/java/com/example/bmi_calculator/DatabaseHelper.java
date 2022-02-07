@@ -59,16 +59,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public Cursor getData(){
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT * FROM " + table;
-        Cursor data= db.rawQuery(query, null);
-        return data;
+        return db.rawQuery(query, null);
     }
 
     //get row from an ID
     public Cursor loadID(String input){
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT * FROM " + table + " WHERE " + PK + " = " + input;
-        Cursor data = db.rawQuery(query, null);
-        return data;
+        return db.rawQuery(query, null);
     }
 
     //function to wipe the db and reset the PK's auto increment value

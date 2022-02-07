@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     //global variables initialization
     TextView BMI, category, healthRisk;
-    EditText weight, height, inputID;
+    EditText weight;
+    EditText height;
+    EditText inputID;
     Button go,viewEntry, load;
     double BMIResult;
     private static final String fileName = "entry.txt";
@@ -47,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
-    //a function to calculate the BMI
-    protected double calcBMI(double weight, double height){
+    //calculate the BMI
+    public double calcBMI(double weight, double height){
         return (weight / Math.pow(height, 2));
     }
 
@@ -218,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
                                 DBH = new DatabaseHelper(MainActivity.this);
                                 DBH.wipeDB();
                             }
-                        });
+                        })
                 builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

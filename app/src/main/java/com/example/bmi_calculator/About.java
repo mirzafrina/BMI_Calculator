@@ -13,19 +13,17 @@ import android.widget.TextView;
 
 public class About extends AppCompatActivity {
 
-    Button gitlink;
+    Button gitlink = findViewById(R.id.github);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-        gitlink = findViewById(R.id.github);
-
         gitlink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoUrl("https://github.com/mirzafrina/BMI_Calculator.git");
+                gotoUrl();
             }
         });
 
@@ -35,8 +33,8 @@ public class About extends AppCompatActivity {
         link.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
-    private void gotoUrl(String s){
-        Uri uri = Uri.parse(s);
+    private void gotoUrl(){
+        Uri uri = Uri.parse("https://github.com/mirzafrina/BMI_Calculator.git");
         startActivity(new Intent(Intent.ACTION_VIEW,uri));
 
     }
