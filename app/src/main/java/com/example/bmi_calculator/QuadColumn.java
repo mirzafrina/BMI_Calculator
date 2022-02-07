@@ -14,13 +14,13 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class QuadColumn_ListAdapter extends ArrayAdapter<Entry> {
+public class QuadColumn extends ArrayAdapter<Entry> {
     private LayoutInflater mInflater;
     private ArrayList<Entry> entries;
     private  int mViewResourceId;
 
 
-    public QuadColumn_ListAdapter(Context context, int textViewResourceId, ArrayList<Entry> entries1){
+    public QuadColumn(Context context, int textViewResourceId, ArrayList<Entry> entries1){
         super(context, textViewResourceId, entries1);
         entries = entries1;
         mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

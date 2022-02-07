@@ -10,11 +10,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -63,7 +59,7 @@ public class ListEntry extends AppCompatActivity {
             }
 
             LV = (ListView) findViewById(R.id.listview);
-            QuadColumn_ListAdapter adapter = new QuadColumn_ListAdapter(this, R.layout.list_adapter, entryList);
+            QuadColumn adapter = new QuadColumn(this, R.layout.list_adapter, entryList);
             LV = (ListView)findViewById(R.id.listview);
             LV.setAdapter(adapter);
 
