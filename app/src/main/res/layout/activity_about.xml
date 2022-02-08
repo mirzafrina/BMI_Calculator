@@ -80,11 +80,11 @@
         android:layout_height="40dp"
         android:orientation="horizontal"
         android:weightSum="100"
-        android:layout_marginLeft="10dp">
+        android:layout_marginStart="10dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="GROUP "
+            android:text="@string/group"
             android:textSize="15sp"
             android:textStyle="bold"
             android:textAlignment="center"
@@ -95,7 +95,35 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text=": CS2703B"
+            android:text="@string/cs2703b"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="20"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/lecturer"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="70"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/sir_atif_ramlan"
             android:textSize="15sp"
             android:textStyle="normal"
             android:layout_gravity="center"
@@ -112,35 +140,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="LECTURER "
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_weight="70"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text=": SIR ATIF RAMLAN"
-            android:textSize="15sp"
-            android:textStyle="normal"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_weight="20"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:weightSum="100"
-        android:layout_marginLeft="10dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="SESSION "
+            android:text="@string/session"
             android:textSize="15sp"
             android:textStyle="bold"
             android:textAlignment="center"
@@ -168,7 +168,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:text="GITHUB "
+            android:text="@string/github"
             android:textSize="15sp"
             android:textStyle="bold"
             android:textAlignment="center"

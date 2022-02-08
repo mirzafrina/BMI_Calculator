@@ -27,7 +27,7 @@ public class About extends AppCompatActivity {
             }
         });
 
-        TextView link = (TextView) findViewById(R.id.github);
+        TextView link = findViewById(R.id.github);
         String linkText = link.getText() + "<a href='https://github.com/mirzafrina/BMI_Calculator.git";
         link.setText(Html.fromHtml(linkText));
         link.setMovementMethod(LinkMovementMethod.getInstance());

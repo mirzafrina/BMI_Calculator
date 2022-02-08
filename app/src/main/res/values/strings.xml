@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BMI_Calculator</string>
+    <string name="github">GITHUB</string>
+    <string name="sir_atif_ramlan">: SIR ATIF RAMLAN</string>
+    <string name="lecturer">LECTURER</string>
+    <string name="session">SESSION</string>
+    <string name="cs2703b">: CS2703B</string>
+    <string name="group">GROUP</string>
 </resources>
