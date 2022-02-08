@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         load.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //check wheter the edittext is empty
+                //check whether the edittext is empty
                 if(String.valueOf(inputID.getText()).isEmpty()){
                     //if so, display toast
                     showToast("Please enter the ID!");
@@ -211,16 +211,16 @@ public class MainActivity extends AppCompatActivity {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setCancelable(true);
-                builder.setTitle("Wipe All Entries");
-                builder.setMessage("Are you sure? Upon clicking Confirm, all data will be lost.");
-                builder.setPositiveButton("Confirm",
+                builder.setTitle("Delete All Entries");
+                builder.setMessage("Are you sure? Upon clicking Yes, all data will be lost.");
+                builder.setPositiveButton("Yes",
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 DBH = new DatabaseHelper(MainActivity.this);
                                 DBH.wipeDB();
                             }
-                        })
+                        });
                 builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

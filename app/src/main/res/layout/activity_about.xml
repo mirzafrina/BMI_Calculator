@@ -161,13 +161,13 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:orientation="horizontal"
         android:weightSum="100"
         android:layout_marginLeft="10dp">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:text="GITHUB "
             android:textSize="15sp"
             android:textStyle="bold"
@@ -179,7 +179,7 @@
 
         <Button
             android:id="@+id/github"
-            android:layout_width="389dp"
+            android:layout_width="402dp"
             android:layout_height="match_parent"
             android:layout_weight="70"
             android:text="gitlink" />
